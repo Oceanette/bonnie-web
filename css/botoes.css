@@ -28,3 +28,10 @@
   .actions button:hover span { transform: translateX(3px); }
   .contact-list a:hover > i { transform: translate(2px,-2px); }
 }
+.head-tools { display: flex; align-items: center; gap: 8px; }
+.language-switch, .intro-language { display: inline-flex; align-items: center; justify-content: center; gap: 5px; min-width: 66px; height: 30px; padding: 0 9px; border: 1px solid #c9d6cc; border-radius: 4px; background: linear-gradient(#ffffffef,#edf2e9); color: #6d7d72; box-shadow: inset 0 1px #fff,0 2px 4px #384d4010; font: 700 8px/1 var(--mono); letter-spacing: .08em; cursor: pointer; transition: border-color .25s ease,background .25s ease,box-shadow .25s ease; }
+.language-switch i, .intro-language i { color: #a5b3a8; font-style: normal; font-weight: 400; }
+.language-switch span, .language-switch strong, .intro-language span, .intro-language strong { font: inherit; opacity: .42; transition: opacity .25s ease,color .25s ease; }
+.language-switch .active, .intro-language .active { color: #537f87; opacity: 1; }
+.language-switch:focus-visible, .intro-language:focus-visible { outline: 2px solid #8cbcc2; outline-offset: 2px; }
+@media (hover: hover) and (pointer: fine) { .language-switch:hover, .intro-language:hover { border-color: #9dbbad; background: linear-gradient(#fff,#e8f0e6); box-shadow: inset 0 1px #fff,0 3px 9px #6b8d6520; } }
