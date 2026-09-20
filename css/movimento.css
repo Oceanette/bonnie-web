@@ -1,0 +1,5 @@
+.js .app:not(.visible) *, .screen[hidden] *, .is-paused *, .is-paused *::before, .is-paused *::after { animation-play-state: paused !important; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+  .intro-loader i { transform: scaleX(1); }
+}

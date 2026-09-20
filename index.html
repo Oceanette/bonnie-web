@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <script src="js/iniciar.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#8bbbc7">
+  <meta name="description" content="O arquivo pessoal de Bonnie: programação, jogos, interfaces e experimentos desde os primeiros dias da web.">
+  <title>Bonnie // About Me</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/botoes.css">
+  <link rel="stylesheet" href="css/cartoes.css">
+  <link rel="stylesheet" href="css/arvores.css">
+  <link rel="stylesheet" href="css/abertura.css">
+  <link rel="stylesheet" href="css/responsivo.css">
+  <link rel="stylesheet" href="css/movimento.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <section class="intro" id="intro" aria-label="Introdução">
+    <div class="intro-grid" aria-hidden="true"></div>
+    <div class="intro-aurora" aria-hidden="true"><i class="aurora aurora-a"></i><i class="aurora aurora-b"></i><i class="aurora aurora-c"></i></div>
+    <div class="intro-particles" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+    <div class="intro-seal" aria-hidden="true"><span>PERSONAL ARCHIVE</span><b>b.</b><small>EST. IN THE WEIRD WEB</small><i></i><i></i></div>
+    <div class="intro-lines" aria-hidden="true">
+      <span></span><span></span><span></span>
+      <i class="intro-arrow arrow-one">↓</i>
+      <i class="intro-arrow arrow-two">↓</i>
+    </div>
+    <div class="intro-copy">
+      <span class="intro-kicker">PERSONAL PAGE / 2000s WEB ARCHIVE</span>
+      <h1><span>about</span><span>me</span></h1>
+      <p>BONNIE / FUTTERMAN / OBUNTO</p>
+      <div class="intro-loader" aria-hidden="true">
+        <span>A LITTLE CORNER OF THE INTERNET</span>
+        <div><i></i><u></u></div>
+        <small><b></b><b></b><b></b></small>
+      </div>
+    </div>
+    <button class="intro-enter" id="enterPortfolio" type="button">ENTRAR <span>↗</span></button>
+    <div class="intro-footer">
+      <span>SINCE THE INTERNET WAS WEIRD</span>
+      <span>BEST VIEWED WITH CURIOSITY</span>
+    </div>
+  </section>
+
+  <main class="app" id="app">
+    <section class="browser">
+      <header class="browser-bar">
+        <div class="traffic" aria-hidden="true"><i></i><i></i><i></i></div>
+        <strong>BONNIE.WEB / PROFILE</strong>
+        <time id="browserDate"></time>
+      </header>
+
+      <div class="layout">
+        <aside class="sidebar">
+          <button class="brand" type="button" data-screen="home">
+            <span class="brand-mark">b.</span>
+            <span><b>BONNIE</b><small>MEU CANTO NA INTERNET</small></span>
+          </button>
+
+          <nav class="nav" aria-label="Seções do perfil">
+            <button class="nav-item active" type="button" data-screen="home"><em>01</em><span><b>HOME</b><small>um pouco sobre mim</small></span></button>
+            <button class="nav-item" type="button" data-screen="story"><em>02</em><span><b>STORY</b><small>como tudo começou</small></span></button>
+            <button class="nav-item" type="button" data-screen="work"><em>03</em><span><b>WORK</b><small>o que ando criando</small></span></button>
+            <button class="nav-item" type="button" data-screen="likes"><em>04</em><span><b>LIKES</b><small>jogos e obsessões</small></span></button>
+            <button class="nav-item" type="button" data-screen="links"><em>05</em><span><b>LINKS</b><small>vamos conversar</small></span></button>
+          </nav>
+
+          <div class="status">
+            <span>STATUS</span>
+            <b><i></i> POR AQUI :)</b>
+            <small>curiosa / criando / aprendendo</small>
+          </div>
+        </aside>
+
+        <section class="content">
+          <div class="paper-noise" aria-hidden="true"></div>
+          <header class="content-head">
+            <div>
+              <span>+ INFORMATION</span>
+              <h2 id="screenTitle">ABOUT BONNIE</h2>
+            </div>
+            <div class="issue">ISSUE 2007.09</div>
+          </header>
+
+          <div class="screens" id="conteudo" tabindex="-1">
+            <article class="screen active" id="screen-home" aria-label="Home" data-screen="home">
+              <div class="copy">
+                <span class="section-tag">PROFILE / 01</span>
+                <h3>Gosto de transformar curiosidade em projeto e ver até onde uma ideia consegue chegar.</h3>
+                <p>Eu sou a Bonnie, mas talvez você já tenha me encontrado pela internet como Futterman ou Obunto. Passo boa parte do meu tempo programando, jogando e criando ferramentas experimentais. Quase tudo começa com um simples “e se...?” e acaba virando algo que eu precisava tirar da cabeça.</p>
+                <div class="actions">
+                  <button type="button" data-jump="story">READ STORY <span>→</span></button>
+                  <button type="button" data-jump="work">VIEW WORK <span>→</span></button>
+                </div>
+              </div>
+
+              <figure class="photo-card">
+                <img src="assets/bonnie.webp" width="1280" height="947" decoding="async" fetchpriority="high" alt="Foto de Bonnie ao ar livre">
+                <div class="photo-tint" aria-hidden="true"></div>
+                <div class="photo-grid" aria-hidden="true"></div>
+                <figcaption>
+                  <small>HELLO / こんにちは</small>
+                  <strong>BONNIE<br>ONLINE :)</strong>
+                  <span>SELF PORTRAIT / ARCHIVE 01</span>
+                </figcaption>
+              </figure>
+            </article>
+
+            <article class="screen" id="screen-story" aria-label="Story" data-screen="story" hidden>
+              <div class="copy">
+                <span class="section-tag">HISTORY / 02</span>
+                <h3>Minha curiosidade por programação começou cedo, no meio daquela internet caótica e cheia de cantos estranhos.</h3>
+                <p>Eu tinha por volta de 15 anos quando comecei a explorar fóruns, 4Chan, Reddit, mods, scripts e todo tipo de ferramenta obscura. Aquilo virou meu laboratório: um lugar para desmontar coisas, entender como funcionavam e tentar montar algo meu.</p>
+                <p>Foi assim que percebi que programar, para mim, nunca seria apenas escrever código. O divertido é descobrir a lógica por trás de um sistema e reconstruí-lo com outra personalidade.</p>
+              </div>
+
+              <div class="poster story-poster">
+                <span class="poster-label">BEGIN / 02</span>
+                <div class="story-number">15</div>
+                <b>ANOS</b>
+                <p>quando programação, comunidades e modding começaram a fazer parte da minha vida</p>
+                <i>EARLY WEB PASS</i>
+              </div>
+            </article>
+
+            <article class="screen" id="screen-work" aria-label="Work" data-screen="work" hidden>
+              <div class="copy">
+                <span class="section-tag">PROJECTS / 03</span>
+                <h3>Se uma ideia parece divertida, provavelmente vou tentar descobrir como fazê-la funcionar.</h3>
+                <p>Já trabalhei em traduções de jogos como STAR WARS Empire at War, IXION e Don't Starve Together. Também gosto de criar interfaces, experiências para a web, ferramentas e sistemas experimentais. Alguns projetos resolvem um problema; outros existem porque eu queria muito ver aquela ideia funcionando.</p>
+              </div>
+
+              <div class="poster work-poster" id="workPoster">
+                <span class="poster-label">WORK / ARCHIVE</span>
+                <button type="button" class="work-bubble bubble-mods" aria-label="Agitar bolha MODS">MODS</button>
+                <button type="button" class="work-bubble bubble-tools" aria-label="Agitar bolha TOOLS">TOOLS</button>
+                <button type="button" class="work-bubble bubble-web" aria-label="Agitar bolha WEB">WEB</button>
+                <button type="button" class="work-bubble bubble-ai" aria-label="Agitar bolha AI">AI</button>
+                <small>BUILD / BREAK / REBUILD</small>
+              </div>
+            </article>
+
+            <article class="screen" id="screen-likes" aria-label="Likes" data-screen="likes" hidden>
+              <div class="copy">
+                <span class="section-tag">INTERESTS / 04</span>
+                <h3>Jogos sempre foram uma das minhas formas favoritas de explorar ideias e sistemas.</h3>
+                <p>League of Legends, Project Zomboid e Portal estão entre os mundos aos quais sempre acabo voltando. Gosto do caos, das possibilidades e dos pequenos detalhes que fazem cada jogo funcionar. Muitas vezes me divirto tanto jogando quanto tentando entender as engrenagens por trás dele.</p>
+              </div>
+
+              <div class="poster likes-poster">
+                <span class="poster-label">FAVORITES / 04</span>
+                <div class="tag-cloud">
+                  <span>games</span><span>modding</span><span>ui</span><span>weird web</span>
+                  <span>experiments</span><span>automation</span><span>interfaces</span><span>late 2000s</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="screen" id="screen-links" aria-label="Links" data-screen="links" hidden>
+              <div class="copy links-copy">
+                <span class="section-tag">LINKS / 05</span>
+                <h3>Se quiser acompanhar o que faço ou simplesmente conversar, estes são os lugares em que você me encontra.</h3>
+                <p>No GitHub ficam meus projetos; por e-mail você fala comigo diretamente. Também apareço na Steam e no Discord quando não estou ocupada criando alguma coisa nova.</p>
+                <div class="contact-list">
+                  <a href="https://github.com/Obuntos" target="_blank" rel="noreferrer"><span><em>01</em><b>GITHUB</b><small>Obuntos</small></span><i>↗</i></a>
+                  <a href="mailto:noreplyobuntos@gmail.com"><span><em>02</em><b>EMAIL</b><small>noreplyobuntos@gmail.com</small></span><i>↗</i></a>
+                  <a href="https://steamcommunity.com/id/Obuntos/" target="_blank" rel="noreferrer"><span><em>03</em><b>STEAM</b><small>Brienne</small></span><i>↗</i></a>
+                  <a href="https://discord.com/app" target="_blank" rel="noreferrer"><span><em>04</em><b>DISCORD</b><small>futterman._</small></span><i>↗</i></a>
+                </div>
+              </div>
+
+              <div class="poster links-poster">
+                <span class="poster-label">CONTACT / 05</span>
+                <strong>FIND<br>ME</strong>
+                <div class="link-orbit orbit-a"></div>
+                <div class="link-orbit orbit-b"></div>
+                <div class="signal-line signal-a"></div>
+                <div class="signal-line signal-b"></div>
+                <div class="poster-glow glow-a"></div>
+                <div class="poster-glow glow-b"></div>
+                <span class="mini-chip chip-github">GITHUB</span>
+                <span class="mini-chip chip-mail">MAIL</span>
+                <span class="mini-chip chip-steam">STEAM</span>
+                <span class="mini-chip chip-x">DISCORD</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="landscape" aria-hidden="true"><div class="landscape-art">
+            <div class="cloud cloud-a"></div>
+            <div class="cloud cloud-b"></div>
+            <div class="cloud cloud-c"></div>
+
+            <div class="mountains">
+              <i class="peak peak-1"></i><i class="peak peak-2"></i><i class="peak peak-3"></i><i class="peak peak-4"></i><i class="peak peak-5"></i><i class="peak peak-6"></i><i class="peak peak-7"></i>
+            </div>
+
+            <div class="ridge ridge-back"></div>
+            <div class="tree tree-b1"><i></i><b></b></div>
+            <div class="tree tree-b2"><i></i><b></b></div>
+            <div class="tree tree-b3"><i></i><b></b></div>
+            <div class="tree tree-b4"><i></i><b></b></div>
+            <div class="tree tree-b5"><i></i><b></b></div>
+
+            <div class="ridge ridge-mid"></div>
+            <div class="tree tree-m1"><i></i><b></b></div>
+            <div class="tree tree-m2"><i></i><b></b></div>
+            <div class="tree tree-m3"><i></i><b></b></div>
+            <div class="tree tree-m4"><i></i><b></b></div>
+            <div class="tree tree-m5"><i></i><b></b></div>
+            <div class="tree tree-m6"><i></i><b></b></div>
+
+            <div class="ridge ridge-front"></div>
+            <div class="tree tree-f1"><i></i><b></b></div>
+            <div class="tree tree-f2"><i></i><b></b></div>
+            <div class="tree tree-f3"><i></i><b></b></div>
+            <div class="tree tree-f4"><i></i><b></b></div>
+            <div class="tree tree-f5"><i></i><b></b></div>
+            <div class="shrub shrub-a"></div>
+            <div class="shrub shrub-b"></div>
+            <div class="shrub shrub-c"></div>
+          </div></div>
+
+          <footer class="content-footer"><span>© BONNIE.WEB</span><span id="footerScreen">01 / 05</span></footer>
+        </section>
+      </div>
+    </section>
+  </main>
+  <script src="js/interface.js" defer></script>
+<script src="js/botoes.js" defer></script>
+<script src="js/bolhas.js" defer></script>
+<script src="js/arvores.js" defer></script>
+<script src="js/abertura.js" defer></script>
+</body>
+</html>

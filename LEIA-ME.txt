@@ -1,0 +1,53 @@
+BONNIE / PERSONAL ARCHIVE
+
+Extraia o ZIP inteiro e abra index.html no navegador.
+Não é necessário instalar nada, usar terminal ou iniciar servidor.
+Mantenha as pastas css, js e assets ao lado do index.html.
+
+CSS
+base.css: cores, fontes e estilos gerais.
+layout.css: estrutura, navegação lateral e áreas de conteúdo.
+botoes.css: botões, links e estados de interação.
+cartoes.css: foto, pôsteres, etiquetas e bolhas.
+arvores.css: árvores, montanhas, nuvens e paisagem.
+abertura.css: tela inicial e transição de entrada.
+responsivo.css: adaptação à largura e à altura da janela.
+movimento.css: pausa e preferência por movimento reduzido.
+
+JAVASCRIPT
+iniciar.js: detecção inicial de JavaScript.
+interface.js: navegação, teclado, seção e data.
+botoes.js: iluminação sutil acompanhando o ponteiro.
+bolhas.js: movimento, colisões e reação ao mouse e ao clique.
+arvores.js: reação delicada da paisagem ao ponteiro.
+abertura.js: abertura, entrada e liberação da interface.
+
+A abertura pode ser pulada com ENTRAR ou Escape.
+Na navegação, use Tab, Enter ou as setas do teclado.
+Na seção WORK, clique nas bolhas para agitá-las.
+A preferência de movimento reduzido do sistema é respeitada.
+
+A moldura acompanha a janela. Em janelas muito pequenas ou com zoom alto,
+o conteúdo tem rolagem interna para continuar legível e acessível.
+Os textos, links e a fotografia do portfólio foram preservados.
+
+
+RENDER
+Adicionei render.yaml na raiz do projeto para deploy como site estático no Render.
+
+Fluxo simples pelo VS Code:
+1. Abra a pasta do projeto no VS Code.
+2. No terminal, rode:
+   git init
+   git branch -M main
+   git add .
+   git commit -m "site pronto para render"
+3. Crie um repositório no GitHub e envie o projeto.
+4. No Render, use New + > Blueprint e selecione o repositório.
+5. O Render lê render.yaml automaticamente e publica o site.
+
+Contato atualizado:
+GitHub: Obuntos
+Email: noreplyobuntos@gmail.com
+Steam: Brienne
+Discord: futterman._
