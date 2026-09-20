@@ -1,20 +1,40 @@
 $ErrorActionPreference = "Stop"
+$repo = "https://github.com/Oceanette/bonnie-web.git"
+
+if (-not (Get-Command git.exe -ErrorAction SilentlyContinue)) {
+    throw "Git nao encontrado."
+}
+
+if (Get-Command gh.exe -ErrorAction SilentlyContinue) {
+    gh.exe auth switch -u Oceanette
+    gh.exe auth setup-git
+}
 
 if (-not (Test-Path ".git")) {
-    git init
-    git branch -M main
+    git.exe init
 }
 
-git add .
+$remotes = @(git.exe remote)
 
-$changes = git status --porcelain
-if ($changes) {
-    git commit -m "site bilingue pt-en"
+if ($remotes -contains "origin") {
+    git.exe remote set-url origin $repo
+} else {
+    git.exe remote add origin $repo
 }
 
-$remote = git remote get-url origin 2>$null
-if (-not $remote) {
-    git remote add origin https://github.com/Oceanette/bonnie-web.git
+git.exe fetch origin main
+git.exe reset --soft origin/main
+git.exe branch -M main
+git.exe add -A
+
+git.exe diff --cached --quiet
+
+if ($LASTEXITCODE -ne 0) {
+    git.exe commit -m "ajusta layout responsivo"
 }
 
-git push -u origin main
+git.exe push -u origin main
+
+Write-Host ""
+Write-Host "PRONTO" -ForegroundColor Green
+Write-Host "https://github.com/Oceanette/bonnie-web"

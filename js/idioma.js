@@ -38,7 +38,7 @@
       workP: 'Já trabalhei em traduções de jogos como STAR WARS Empire at War, IXION e Don\'t Starve Together. Também gosto de criar interfaces, experiências para a web, ferramentas e sistemas experimentais. Alguns projetos resolvem um problema; outros existem porque eu queria muito ver aquela ideia funcionando.',
       shake: 'Agitar bolha',
       likesH: 'Jogos sempre foram uma das minhas formas favoritas de explorar ideias e sistemas.',
-      likesP: 'League of Legends, Project Zomboid e Portal estão entre os mundos aos quais sempre acabo voltando. Gosto do caos, das possibilidades e dos pequenos detalhes que fazem cada jogo funcionar. Muitas vezes me divirto tanto jogando quanto tentando entender as engrenagens por trás dele.',
+      likesP: 'League of Legends, Project Zomboid e Portal estão entre os mundos aos quais sempre acabo voltando. Gosto do caos, das possibilidades e dos pequenos detalhes que fazem cada jogo funcionar.',
       linksH: 'Se quiser acompanhar o que faço ou simplesmente conversar, estes são os lugares em que você me encontra.',
       linksP: 'No GitHub ficam meus projetos; por e-mail você fala comigo diretamente. Também apareço na Steam e no Discord quando não estou ocupada criando alguma coisa nova.',
       languageAria: 'Trocar idioma'
@@ -80,7 +80,7 @@
       workP: 'I have worked on translations for games such as STAR WARS Empire at War, IXION and Don\'t Starve Together. I also enjoy building interfaces, web experiences, tools and experimental systems. Some projects solve a problem; others exist simply because I really wanted to see the idea working.',
       shake: 'Shake bubble',
       likesH: 'Games have always been one of my favorite ways to explore ideas and systems.',
-      likesP: 'League of Legends, Project Zomboid and Portal are some of the worlds I keep coming back to. I love the chaos, the possibilities and the small details that make each game work. I often have as much fun playing as I do trying to understand the machinery behind it.',
+      likesP: 'League of Legends, Project Zomboid and Portal are some of the worlds I keep coming back to. I love the chaos, the possibilities and the small details that make each game work.',
       linksH: 'If you want to follow what I make or just say hello, these are the places where you can find me.',
       linksP: 'My projects live on GitHub, and email is the most direct way to reach me. You can also find me on Steam and Discord whenever I am not busy making something new.',
       languageAria: 'Change language'
