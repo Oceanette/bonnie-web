@@ -1,8 +1,7 @@
 services:
   - type: web
+    runtime: static
     name: bonnie-web
-    env: static
-    plan: free
     buildCommand: ""
     staticPublishPath: .
     pullRequestPreviewsEnabled: false
